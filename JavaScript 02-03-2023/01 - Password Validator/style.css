@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}
+
+body{
+	height: 100vh;
+	background: linear-gradient(to top left , rgb(0, 255, 247) , rgb(3, 252, 86));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	border: 1px solid red;
+	padding: 20px 40px;
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 20px );
+	-webkit-backdrop-filter: blur( 20px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	width: 380px;
+	height: 320px;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+header > h1{
+	text-transform: capitalize;
+	word-spacing: 10px;
+}
+header > p{
+	opacity: 0.75;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	text-transform: capitalize;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+.pass{
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+.pass > label{
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+}
+.pass > input{
+	background-color: transparent;
+	padding: 3px 6px;
+	border: 1.5px solid #00000055;
+}
+.btn > input{
+	padding: 3px 6px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 500;
+	background-color: transparent;
+	border: 1px solid #00000055;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px black;
+}
+input:focus {
+	outline: none;
+}
+
+.circle{
+	width: 80px;
+	height: 80px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+
+}
+.top-left-circle{
+	top: calc((100vh - 320px)/2);
+	left: calc((100vw - 380px)/2);
+	background-color: rgb(255, 134, 227);
+}
+.bottom-right-circle{
+	bottom: calc((100vh - 320px)/2);
+	right: calc((100vw - 380px)/2);
+	background-color: rgb(255, 134, 227);
+}

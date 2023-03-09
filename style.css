@@ -1,0 +1,149 @@
+/* Sono Font  */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+/* Variables */
+:root{
+	--bgColor : #1c1c1c;
+	--h1Color : #ffd700;
+	--h1SpanColor : #ffffff ; /* this color used for white also , ex. used insid the container > header as bgc */
+	--h1BgColor : #00aeff80 ;
+
+	--oddContainerBgColor : #fffbc3;
+	--evenContainerBgColor : #ffe2c8;
+	--oddProjectBgColor : #ffe2c8;
+	--evenProjectBgColor : #fffbc3;
+
+	--borderContentColor : #ed282b;
+
+	--border : 1px solid #ff0000 ;
+	--borderC : 1px solid green ;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+body{
+	height: 100vh;
+	background-color: var(--bgColor);
+}
+
+/* heading-section of page */
+body > header{
+	background-color: var(--h1BgColor);
+}
+body > header > h1{
+	padding: 7.5px 20px;
+	position: relative;
+
+	color: var(--h1Color);
+	text-align: center;
+	line-height: 2.75rem;
+}
+body > header > h1 > span{
+	padding: 6px 10px;
+	border-bottom: 4px solid var(--h1Color);
+	border-radius: 20px;
+
+	color: var(--h1SpanColor);
+}
+
+/* main-section of page */
+body > main{
+	margin: 3rem 0 0 0;
+	padding: 0 3rem 3rem 3rem;
+	height: calc(100vh - 162px);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	overflow-y: auto;
+}
+.container{
+	padding: 1rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+}
+.container:nth-child(odd){
+	background-color: var(--oddContainerBgColor);
+}
+.container:nth-child(even){
+	background-color: var(--evenContainerBgColor);
+}
+.container > header{
+	padding: 9px 18px;
+	align-self: center;
+	border-radius: 20px;
+	background-color: var(--h1SpanColor);
+	box-shadow: 0px 3px 3px var(--bgColor);
+}
+.container > main{
+	padding: 1rem 0 0 0;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-between;
+	row-gap: 1.5rem;
+}
+.content{
+	padding: 1.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.75rem;
+	border: 0.1rem solid var(--borderContentColor);
+}
+/* selecting odd even project of odd even container */
+.container:nth-child(odd) > main > .content{
+	border-top-left-radius: 1.5rem;
+	border-bottom-right-radius: 1.5rem;
+	background-color: var(--oddProjectBgColor);
+}
+.container:nth-child(even) > main > .content{
+	border-top-right-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+	background-color: var(--evenProjectBgColor);
+}
+.content > h4{
+	opacity: 0.7;
+
+	font-size: 18px;
+}
+.links{
+	/* border: var(--border); */
+	/* padding: 8px 16px; */
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.link-btn{
+	padding: 0.7rem 1rem;
+	border: 1px solid var(--bgColor);
+	border-radius: 1rem;
+
+	color: #007171;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* hover effects on links button */
+.container:nth-child(odd) > main > .content > .links > .github-link:hover , 
+.container:nth-child(odd) > main > .content > .links > .live-link:hover{
+	background-color: var(--oddContainerBgColor);
+}
+.container:nth-child(even) > main > .content > .links > .github-link:hover , 
+.container:nth-child(even) > main > .content > .links > .live-link:hover{
+	background-color: var(--evenContainerBgColor);
+}
+/* *********************************************************************************** */
+/* aligning last project of each container */
+/* container - 1 */
+#content-17{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+/* container - 2 */
+#content-27{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
