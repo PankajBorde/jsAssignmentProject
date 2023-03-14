@@ -1,3 +1,4 @@
+
 let dishes ;
 let dishesArray = [] ;
 let dishPriceArray = [] ;
@@ -128,9 +129,8 @@ document.querySelector("#btn-peoples").addEventListener("click" , ()=>{
 	})
 	// adding innerHTML to total bill
 	document.querySelector("#total-bill").innerHTML = `Total bill : <span>${totalBill}₹</span>` ;
-	document.querySelector("#each-person-bill").innerHTML = `Bill to be paid by each person in group : <span>${totalBill / Number(peoples)}₹</span>` ;
+	document.querySelector("#each-person-bill").innerHTML = `Bill to be paid by each person in group : <span>${(totalBill / Number(peoples)).toFixed(2)}₹</span>` ;
 })
-
 
 
 
