@@ -85,7 +85,7 @@ body > main{
 	row-gap: 1.5rem;
 }
 .content{
-	padding: 1.5rem 2rem;
+	padding: 1.5rem 1.8rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
