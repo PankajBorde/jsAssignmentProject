@@ -15,6 +15,7 @@ body > header{
 	position: fixed;
 }
 #bar{
+	width: 0px;
 	height: 15px;
 	background: linear-gradient(to right, red, yellow);
 }
