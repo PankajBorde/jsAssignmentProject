@@ -137,8 +137,8 @@ body > main{
 /* *********************************************************************************** */
 /* aligning last project of each container */
 /* container - 1 */
-/* #content-120{
-	grid-column-start: 3;
-	grid-column-end: 4;
-} */
+#content-122{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
 
