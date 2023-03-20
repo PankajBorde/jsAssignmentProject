@@ -1,0 +1,41 @@
+/* Sono font  */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	background-color: #1c1c1c;
+}
+header{
+	height: 5vh;
+}
+header > h1{
+	color: gold;
+}
+main{
+	position: relative;
+	width: 99vw;
+	height: 85vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 2px solid gold;
+}
+main > img{
+	margin: auto;
+	width: 10vw;
+	height: 15vh;
+	position: absolute;
+
+	transition: 1s;
+}
