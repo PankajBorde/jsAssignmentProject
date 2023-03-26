@@ -1,0 +1,91 @@
+/* Sono font  */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sono', sans-serif;
+}
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+
+	background-color: #1c1c1c;
+}
+header > h1{
+	color: gold;
+}
+body > main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+#op-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#op-head{
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	gap: 35px;
+
+	border: 2px solid pink;
+
+	color: white;
+	font-size: 22px;
+	text-align: center;
+}
+#op-main{
+	padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 2px solid pink;
+	border-bottom: 2px solid pink;
+	border-left: 2px solid pink;
+}
+.row{
+	padding: 7.5px 0px;
+	display: flex;
+	align-items: center;
+	gap: 35px;
+	color: gray;
+	font-size: 19px;
+	text-align: center;
+}
+.row > span:nth-child(1) , #op-head > span:nth-child(1){
+	display: inline-block;
+	width: 40px;
+}
+.row > span:nth-child(2) , #op-head > span:nth-child(2){
+	display: inline-block;
+	width: 80px;
+}
+.row > span:nth-child(3) , #op-head > span:nth-child(3){
+	display: inline-block;
+	width: 100px;
+}
+.row > span:nth-child(4) , #op-head > span:nth-child(4){
+	display: inline-block;
+	width: 120px;
+}
+
+#btn-filter{
+	padding: 10px 20px;
+	background-color: transparent;
+
+	border: 2px solid gold;
+	border-radius: 20px;
+
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+
+	cursor: pointer;
+}

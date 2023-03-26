@@ -146,3 +146,8 @@ body > main{
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
+/* container-2 */
+#content-204{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
