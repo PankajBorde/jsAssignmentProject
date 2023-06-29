@@ -1,0 +1,12 @@
+/* Media for width -> 630px to  */
+@media screen and (min-width: 0px) and (max-width: 630px){
+	
+}
+
+
+:root{
+	--EST-padding : 12px 15px;
+	--EST-gap : 15px;
+	--EST-border-bottom : 0.5px solid hsl(237, 14%, 26%);
+	--EST-font-size : 18px;
+}

@@ -7,6 +7,47 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+:root{
+	/* body */
+	--B-main-bgc : hsl(235, 21%, 11%);
+
+	/* header of body */
+	--HofB-font-color : white;
+
+	/* main of body */
+	--MofB-width : 600px;
+
+	/* new input box */
+	--NIB-padding : 16px 15px;
+	--NIB-gap : 10px;
+	--NIB-bgc : hsl(235, 24%, 19%);
+
+	/* head circle of new input box */
+	--cmn-circle-width : 15px;
+	--cmn-circle-height : 15px;
+
+	/* input new todo of new input box*/
+	--INTofNIB-width : 475px;
+	--INTofNIB-color : hsl(234, 39%, 85%);
+	--INTofNIB-font-size : 22px;
+	--INTofNIB-caret-color : hsl(220, 98%, 61%);
+
+	/* button 'add' task of new input box */
+	--BATofNIB-padding : 5px 10px 2.5px 10px;
+	--BATofNIB-right : 15px;
+	--BATofNIB-border : 2px solid hsl(280, 87%, 65%);
+	--BATofNIB-color : hsl(220, 98%, 61%);
+	--BATofNIB-font-size : 18px;
+
+	/* list items section*/
+	--LIS-bgc : hsl(235, 24%, 19%);
+
+	/* each single task */
+	--EST-padding : 12px 15px;
+	--EST-gap : 15px;
+	--EST-border-bottom : 0.5px solid hsl(237, 14%, 26%);
+	--EST-font-size : 18px;
+}
 body{
 	padding: 40px 0px 20px 0px;
 	display: flex;
@@ -14,10 +55,10 @@ body{
 	align-items: center;
 	gap: 20px;
 
-	background-color: hsl(235, 21%, 11%);
+	background-color: var(--B-main-bgc);
 }
 #bgc{
-	width: 100vw;
+	min-width: 100vw;
 	height: 40vh;
 	position: fixed;
 	top: 0;
@@ -26,69 +67,70 @@ body{
 }
 /* header of body ******************************************************** */
 body > header > h1{
-	color: white;
+	color: var(--HofB-font-color);
 	letter-spacing: 10px;
 }
 /* main of body ******************************************************** */
 body > main{
-	width: 600px;
+	width: var(--MofB-width);
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-
 }
 /* new input box */
 #new-todo{
 	position: relative;
-	padding: 16px 15px;
+	padding: var(--NIB-padding);
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: var(--NIB-gap);
 
-	background-color: hsl(235, 24%, 19%);
+	background-color: var(--NIB-bgc);
 	border-radius: 5px;
 }
+/* head circle of new input box */
 .head-circle{
-	width: 15px;
-	height: 15px;
+	width: var(--cmn-circle-width);
+	height: var(--cmn-circle-height);
 
 	background: transparent;
 	border: 0.5px solid  rgba(119, 122, 146, 0.75);
 	border-radius: 50%;
 }
+/* input new todo of new input box*/
 #in-new-todo{
-	width: 475px;
+	width: var(--INTofNIB-width);
 
  	background-color: transparent;
  	border: none;
 
-	color: hsl(234, 39%, 85%);
-	font-size: 22px;
-	caret-color: hsl(220, 98%, 61%);
+	color: var(--INTofNIB-color);
+	font-size: var(--INTofNIB-font-size);
+	caret-color: var(--INTofNIB-caret-color);
 }
 #in-new-todo:focus{
 	outline: none;
 }
+/* button 'add' task of new input box */
 #btn-add-task{
-	padding: 5px 10px 2.5px 10px;
+	padding: var(--BATofNIB-padding);
 	position: absolute;
-	right: 15px;
+	right: var(--BATofNIB-right);
 
 	background-color: transparent;
-	border: 2px solid hsl(280, 87%, 65%);
+	border: var(--BATofNIB-border);
 	border-radius: 10px;
 
-	color: hsl(220, 98%, 61%);
-	font-size: 18px;
+	color: var(--BATofNIB-color);
+	font-size: var(--BATofNIB-font-size);
 	cursor: pointer;
 }
-
 /* list items section*/
 body > main > section{
 	display: flex;
 	flex-direction: column;
 
-	background-color: hsl(235, 24%, 19%);
+	background-color: var(--LIS-bgc);
 	border-radius: 5px;
 }
 /* task screen for each task of completed , active   */
@@ -99,20 +141,21 @@ body > main > section{
 /* each single task */
 .box{
 	position: relative;
-	padding: 12px 15px;
+	padding: var(--EST-padding);
 	display: flex;
 	align-items: center;
-	gap: 15px;
+	gap: var(--EST-gap);
 
-	border-bottom: 0.5px solid hsl(237, 14%, 26%);
+	border-bottom: var(--EST-border-bottom);
 
-	font-size: 18px;
+	font-size: var(--EST-font-size);
 	cursor: move;
+	overflow-x: auto;
 }
 /* active task circle */
 .active-circle{
-	width: 15px;
-	height: 15px;
+	width: var(--cmn-circle-width);
+	height: var(--cmn-circle-height);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -192,7 +235,7 @@ body > main > section{
 
 /* footer of cection  */
 section > footer{
-	padding: 12px 15px;
+	padding: var(--EST-padding);
 	display: flex;
 	align-items: center;
 	justify-content: center;

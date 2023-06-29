@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh ;
+	background-color: #1c1c1c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#container{
+	padding: 20px;
+	border: 1px solid gold;
+	border-radius: 8px;
+	box-shadow: 1px 1px 5px white, -1px -1px 5px white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#headerBlock{
+	margin: 8px 0px;
+}
+#headerBlock > h1{
+	color: yellowgreen;
+	text-transform: capitalize;
+}
+#middleBlock{
+	margin: 8px 0px;
+	display: flex;
+	gap: 8px;
+}
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn > button{
+	padding: 9px 8px;
+	background-color: gray;
+	border: 1.5px solid gold;
+	text-transform: capitalize;
+	font-weight: 700;
+	cursor: pointer;
+}
+#display{
+	border: 2px solid white;
+	height: 40px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: none;
+}
+#disScreen{
+	color: gold;
+	font-weight: 700;
+}
