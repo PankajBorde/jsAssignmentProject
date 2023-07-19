@@ -142,6 +142,11 @@ body > main{
 /* *********************************************************************************** */
 /* aligning last project of each container */
 /* container - 1 */
+#content-107{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+/* container - 2 */
 #content-225{
 	grid-column-start: 2;
 	grid-column-end: 3;
