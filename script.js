@@ -1,5 +1,5 @@
 function displayNone(num){
-	for(let i=1; i<=2; i++){
+	for(i=1; i<=3; i++){
 		if(i==num){
 			continue ;
 		}
@@ -11,23 +11,34 @@ function displayNone(num){
 
 // container-1
 document.querySelector("#head-container-1").addEventListener("click" , ()=>{
+	displayNone(1) ;
 	if(	document.querySelector("#main-container-1").style.display == "grid"){
 		document.querySelector("#main-container-1").style.display = "none" ;
 	}
 	else{
 		document.querySelector("#main-container-1").style.display = "grid" ;
-		displayNone(1) ;
 	}
 })
 
 // container-2
 document.querySelector("#head-container-2").addEventListener("click" , ()=>{
+	displayNone(2) ;
 	if(	document.querySelector("#main-container-2").style.display == "grid"){
 		document.querySelector("#main-container-2").style.display = "none" ;
 	}
 	else{
 		document.querySelector("#main-container-2").style.display = "grid" ;
-		displayNone(2) ;
+	}
+})
+
+// container-3
+document.querySelector("#head-container-3").addEventListener("click" , ()=>{
+	displayNone(3) ;
+	if(	document.querySelector("#main-container-3").style.display == "grid"){
+		document.querySelector("#main-container-3").style.display = "none" ;
+	}
+	else{
+		document.querySelector("#main-container-3").style.display = "grid" ;
 	}
 })
 
